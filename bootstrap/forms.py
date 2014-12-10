@@ -121,7 +121,6 @@ class BootstrapMixin(object):
                 help_text = '<span class="help-%s">%s</span>' % (self.help_style, force_unicode(field_instance.help_text))
             else:
                 help_text = u''
-            import pdb; pdb.set_trace()
             field_hash = {
                 'class' : mark_safe(css_class),
                 'label' : mark_safe(bf.label or ''),
